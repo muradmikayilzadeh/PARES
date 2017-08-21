@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PARES V1.0</title>
+	
+	<!-- Links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/style.css">
+
+	<!-- Scripts -->
+	<script src="assets/script.js"></script>
+
+</head>
+<body>
+	
+	<div class="container-fluid">
+		
+		<div class="row">
+
+			<nav class="navbar navbar-default col-sm-12 col-xs-12 col-md-12">
+				<div class="container">
+					
+					<div class="navbar-brand">
+						PARES V1.0
+					</div>
+
+				</div>
+			</nav>
+
+			<section class="jumbotron bg-info text-center col-md-12 col-sm-12 col-xs-12">
+				<div class="container">
+					
+					<div class="text">
+						<h1><b>PARES</b></h1>
+						<p class="lead">Make your PATH responsive</p>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="col-md-12 col-sm-12 col-xs-12">
+				<div class="container">
+					
+					<h2>How it works?</h2>
+					<hr>
+					<p>Firstly, you must fill width, height inputs. Then enter your path "d" attribute to path area. Finally, click to convert button. But you must add <code>viewBox="0 0 100 100"</code> to your svg tag. It will looks like that.</p>
+
+					<pre>&ltsvg width="100%" height="100%" viewBox="0 0 100 100" &gt ... &ltsvg&gt</pre>
+
+				</div>				
+			</section>
+
+			<section class="col-md-12 col-sm-12 col-xs-12">
+				<div class="container">
+
+					<br><br>
+					<h2>Converter</h2>
+					<hr>
+
+					<input type="text" id="width" placeholder="Enter width" class="form-control">
+					<br>
+					<input type="text" id="height" placeholder="Enter height" class="form-control">
+					<br>
+					<textarea id="path" placeholder="Enter path 'd' attribute " class="form-control" cols="30" rows="10"></textarea>
+					<br>
+					<button class="btn btn-success" onclick="convert()">Convert</button>
+					<br><br>
+					<pre id="result">Your converted path 'd' attribute will be here</pre>
+					<br><br>
+
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

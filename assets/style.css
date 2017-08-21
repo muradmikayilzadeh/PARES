@@ -1,0 +1,9 @@
+.jumbotron{
+	color:white;
+	background: #337ab7 !important;
+	border-radius: 0px !important;
+}
+	.jumbotron .text{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
